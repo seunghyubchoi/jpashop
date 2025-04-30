@@ -20,4 +20,9 @@ public class OrderRepository {
     public Order findOne(Long id){
         return em.find(Order.class, id);
     }
+
+    public List<Order> findAllByString(OrderSearch orderSearch) {
+        // querydsl..
+        return null;
+    }
 }
